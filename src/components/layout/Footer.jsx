@@ -41,16 +41,16 @@ export default function Footer() {
             <p className="mt-3 text-sm leading-relaxed text-muted">
               {profile.role} based in {profile.location}. Building scalable software and solving real-world problems.
             </p>
-            <div className="mt-5 flex items-center gap-3">
+            <div className="mt-5 flex flex-wrap items-center gap-3">
               {socials.map(({ Icon, href, label }) => (
                 <a
                   key={label}
                   href={href}
                   target={label === 'Email' ? undefined : '_blank'}
-                  rel="noreferrer"
+                  rel={label === 'Email' ? undefined : 'noreferrer'}
                   aria-label={label}
                   data-cursor="hover"
-                  className="glass flex h-10 w-10 items-center justify-center rounded-full text-mist/70 transition-colors duration-300 hover:text-mist"
+                  className="glass flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-mist/70 transition-colors duration-300 hover:text-mist"
                 >
                   <Icon />
                 </a>
@@ -77,7 +77,7 @@ export default function Footer() {
           {/* CTA */}
           <div className="flex flex-col items-start gap-4">
             <p className="text-xs uppercase tracking-[0.2em] text-muted">Get in touch</p>
-            <a href={profile.socials.email} data-cursor="hover" className="font-display text-lg text-mist transition-colors hover:text-aurora-violet">
+            <a href={profile.socials.email} data-cursor="hover" className="font-display text-lg text-mist transition-colors hover:text-aurora-violet break-all">
               {profile.email}
             </a>
             <button

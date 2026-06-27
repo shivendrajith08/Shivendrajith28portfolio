@@ -3,6 +3,7 @@ import { MapPin, GraduationCap, Code2, Sparkles } from 'lucide-react';
 import SectionHeading from '../ui/SectionHeading';
 import Reveal from '../ui/Reveal';
 import Counter from '../ui/Counter';
+import RotatingText from '../ui/RotatingText';
 import { profile } from '../../data/profile';
 
 const stats = [
@@ -84,7 +85,7 @@ export default function About() {
                 </div>
                 <div className="text-right">
                   <p className="font-display text-xl font-semibold text-mist">{profile.name}</p>
-                  <p className="text-sm text-aurora-violet/90">{profile.role}</p>
+                  <p className="text-sm text-aurora-violet/90"><RotatingText items={profile.roles} /></p>
                 </div>
               </div>
 
