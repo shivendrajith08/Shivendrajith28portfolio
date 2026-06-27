@@ -9,7 +9,7 @@ import { profile } from '../../data/profile';
 const stats = [
   { value: 4, suffix: '+', label: 'Projects shipped' },
   { value: 10, suffix: '+', label: 'Technologies' },
-  { value: 6, suffix: ' mo', label: 'Internship experience' },
+  { value: 1, suffix: '+ yr', label: 'Internship experience' },
 ];
 
 const facts = [
