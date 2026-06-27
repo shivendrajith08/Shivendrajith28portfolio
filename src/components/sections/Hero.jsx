@@ -114,7 +114,7 @@ export default function Hero() {
                 key={label}
                 as="a"
                 href={href}
-                target="_blank"
+                target={label === 'Email' ? undefined : '_blank'}
                 rel="noreferrer"
                 aria-label={label}
                 strength={0.5}

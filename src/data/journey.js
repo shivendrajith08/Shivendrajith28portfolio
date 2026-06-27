@@ -1,11 +1,11 @@
 // Experience / training timeline (most recent first)
 export const experience = [
   {
-    role: 'Java Full Stack Developer — Training',
+    role: 'Java Full Stack Developer Intern',
     org: 'KodNest',
     location: 'Bengaluru, India',
-    period: 'Jan 2025 – Jul 2025',
-    type: 'Bootcamp',
+    period: 'Jan 2026 – Jul 2026',
+    type: 'Internship',
     points: [
       'Completed an intensive Java Full Stack program covering core & advanced Java, Spring Boot and REST APIs.',
       'Built full-stack applications with MySQL, connecting Spring Boot back-ends to responsive front-ends.',
@@ -46,7 +46,7 @@ export const certifications = [
   {
     title: 'Java Full Stack Developer',
     issuer: 'KodNest, Bengaluru',
-    year: '2025',
+    year: '2026',
   },
   {
     title: 'Full Stack Developer — Python',

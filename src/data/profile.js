@@ -10,7 +10,7 @@ export const profile = {
   resumeUrl: '#',
   socials: {
     github: 'https://github.com/shivendrajith08',
-    linkedin: 'https://linkedin.com/in/shivendra-jith',
+    linkedin: 'https://www.linkedin.com/in/shivendra-jith',
     email: 'mailto:shivendrajith@gmail.com',
   },
 };
