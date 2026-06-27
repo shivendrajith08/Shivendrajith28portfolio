@@ -46,10 +46,17 @@ export default function Navbar() {
           href="#home"
           onClick={(e) => go(e, '#home')}
           data-cursor="hover"
-          className="font-display text-lg font-semibold tracking-tight text-mist"
+          className="flex items-center gap-2.5 font-display text-lg font-semibold tracking-tight text-mist"
         >
-          {profile.firstName}
-          <span className="text-aurora-violet">.</span>
+          <img
+            src={profile.photo}
+            alt="Shivendra Jith"
+            className="h-8 w-8 rounded-full object-cover ring-2 ring-white/15"
+          />
+          <span>
+            {profile.firstName}
+            <span className="text-aurora-violet">.</span>
+          </span>
         </a>
 
         <div className="hidden items-center gap-1 md:flex">
