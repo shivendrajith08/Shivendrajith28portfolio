@@ -18,7 +18,7 @@ function AnimatedWord({ text, className = '' }) {
     <span className={`inline-flex overflow-hidden ${className}`}>
       {text.split('').map((c, i) => (
         <motion.span key={i} custom={i} variants={letter} initial="hidden" animate="show" className="inline-block">
-          {c === ' ' ? '\u00A0' : c}
+          {c === ' ' ? ' ' : c}
         </motion.span>
       ))}
     </span>
@@ -35,7 +35,6 @@ export default function Hero() {
   return (
     <section id="home" className="relative flex min-h-[100svh] flex-col justify-center px-6 pt-28 pb-20 sm:px-10 lg:px-20">
       <div className="mx-auto w-full max-w-7xl">
-        {/* status pill */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -49,7 +48,6 @@ export default function Hero() {
           Available for opportunities
         </motion.div>
 
-        {/* eyebrow */}
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -59,7 +57,6 @@ export default function Hero() {
           {profile.role}
         </motion.p>
 
-        {/* name */}
         <h1 className="font-display font-semibold tracking-tightest leading-[0.92] text-mist">
           <span className="block text-[clamp(3rem,11vw,9.5rem)]">
             <AnimatedWord text={profile.firstName} />
@@ -69,7 +66,6 @@ export default function Hero() {
           </span>
         </h1>
 
-        {/* tagline */}
         <motion.p
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -79,7 +75,6 @@ export default function Hero() {
           {profile.tagline}
         </motion.p>
 
-        {/* CTAs + socials */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -127,7 +122,6 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* scroll indicator */}
       <motion.a
         href="#about"
         aria-label="Scroll to about"
@@ -143,7 +137,6 @@ export default function Hero() {
         </span>
       </motion.a>
 
-      {/* floating hint chip */}
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
