@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { FiGithub, FiLinkedin, FiMail, FiArrowDownRight } from 'react-icons/fi';
 import { MousePointer2 } from 'lucide-react';
 import MagneticButton from '../ui/MagneticButton';
+import RotatingText from '../ui/RotatingText';
 import { profile } from '../../data/profile';
 
 const letter = {
@@ -54,7 +55,7 @@ export default function Hero() {
           transition={{ delay: 0.4, duration: 0.6 }}
           className="mb-3 font-sans text-sm uppercase tracking-[0.3em] text-aurora-violet/90 sm:text-base"
         >
-          {profile.role}
+          <RotatingText items={profile.roles} />
         </motion.p>
 
         <h1 className="font-display font-semibold tracking-tightest leading-[0.92] text-mist">

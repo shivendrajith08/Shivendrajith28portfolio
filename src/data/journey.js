@@ -1,6 +1,18 @@
 // Experience / training timeline (most recent first)
 export const experience = [
   {
+    role: 'Python Full Stack Developer Intern',
+    org: 'Software Solutions',
+    location: 'Remote, India',
+    period: 'Jun 2024 – Jun 2025',
+    type: 'Internship · 1 yr',
+    points: [
+      'Built and shipped full-stack web applications using Python, Flask and Django with REST APIs.',
+      'Developed responsive React front-ends and connected them to SQL back-ends end-to-end.',
+      'Worked through the full cycle — design, CRUD, testing and deployment — in an Agile team.',
+    ],
+  },
+  {
     role: 'Java Full Stack Developer Intern',
     org: 'KodNest',
     location: 'Bengaluru, India',

@@ -28,8 +28,8 @@ export default function About() {
           <Reveal variant="up" delay={0.1} className="space-y-5 text-lg leading-relaxed text-muted">
             <p>
               I'm <span className="text-mist">Shivendra</span>, a full stack developer who likes turning fuzzy ideas into
-              software people can actually use. I work across the stack — designing clean REST APIs with
-              <span className="text-mist"> Flask, Django and Spring Boot</span>, and shaping responsive front-ends with
+              software people can actually use. I work across the stack —
+              designing clean REST APIs with <span className="text-mist">Flask, Django and Spring Boot</span>, building Java full-stack apps, and shaping responsive front-ends with
               <span className="text-mist"> React</span>.
             </p>
             <p>
@@ -71,8 +71,13 @@ export default function About() {
             >
               {/* monogram */}
               <div className="flex items-center justify-between">
-                <div className="relative flex h-20 w-20 items-center justify-center rounded-3xl bg-gradient-to-br from-aurora-indigo to-aurora-rose font-display text-3xl font-semibold text-white shadow-luxe">
-                  SJ
+                <div className="relative">
+                  <img
+                    src={profile.photo}
+                    alt="Shivendra Jith"
+                    loading="lazy"
+                    className="h-20 w-20 rounded-3xl object-cover shadow-luxe ring-2 ring-white/10"
+                  />
                   <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-emerald-400 ring-4 ring-ink-800">
                     <Sparkles className="h-3 w-3 text-ink-900" />
                   </span>
